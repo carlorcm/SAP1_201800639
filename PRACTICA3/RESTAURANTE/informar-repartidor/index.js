@@ -6,7 +6,7 @@ const port = 4003;
 
 app.use(morgan('combined'));
 
-app.post('/pedido/:id/listo', (req, res) => {
+app.post('/restaurante/avisar-repartidor/:id/listo', (req, res) => {
   const pedidoId = req.params.id;
   // Lógica para avisar al repartidor que el pedido está listo
   console.log(`Avisando al repartidor que el pedido ${pedidoId} está listo...`);

@@ -6,7 +6,7 @@ const port = 3003;
 
 app.use(morgan('combined'));
 
-app.get('/pedido/:id', (req, res) => {
+app.get('/cliente/verificar-estado-repartidor/:id', (req, res) => {
   const pedidoId = req.params.id;
   const { cliente, repartidor } = req.query;
   // Lógica para verificar el estado del pedido al repartidor

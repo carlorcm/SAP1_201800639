@@ -6,7 +6,7 @@ const port = 4002;
 
 app.use(morgan('combined'));
 
-app.get('/pedido/:id', (req, res) => {
+app.get('/restaurante/informar-estado-pedido/:id', (req, res) => {
   const pedidoId = req.params.id;
   const { estado } = req.query;
   // Lógica para informar el estado del pedido al cliente

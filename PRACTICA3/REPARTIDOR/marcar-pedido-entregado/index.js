@@ -6,7 +6,7 @@ const port = 5003;
 
 app.use(morgan('combined'));
 
-app.post('/pedido/:id/entregado', (req, res) => {
+app.post('/repartidor/marcar-entregado/:id/entregado', (req, res) => {
   const pedidoId = req.params.id;
   // Lógica para marcar el pedido como entregado
   console.log(`Marcando el pedido ${pedidoId} como entregado...`);

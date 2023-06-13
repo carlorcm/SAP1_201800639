@@ -7,7 +7,7 @@ const port = 5001;
 app.use(express.json());
 app.use(morgan('combined'));
 
-app.post('/pedido', (req, res) => {
+app.post('/repartidor/recibir-pedido', (req, res) => {
   const pedido = req.body;
   // Lógica para recibir el pedido del restaurante
   console.log('Recibiendo pedido del restaurante...');
